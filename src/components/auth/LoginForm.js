@@ -27,7 +27,7 @@ const LoginForm = () => {
         setError(error.message);
       } else {
         console.log('Login successful:', data);
-        router.push('/publisher/dashboard'); // Redirect after login, middleware will handle role-based routing
+        router.push('/'); // Redirect after login, middleware will handle role-based routing
       }
     } catch (err) {
       setError(err.message);
